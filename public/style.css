@@ -1,0 +1,290 @@
+*  {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+    text-transform: capitalize;
+  
+}
+a:hover{
+    text-decoration: none;
+}
+.linksoful{
+    padding:5px;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    font-size: 12px;
+    }
+.container{
+        max-width: 1200px;
+        margin:0px auto
+}
+h1{
+    text-wrap: balance;
+    text-align: center;
+}
+.topics{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+grid-gap: 10px;
+padding:20px 0px
+}
+.topic{
+    display: flex;
+    background-color: #eee;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic .imgTopic{
+  width: 300px;
+   border:0px solid green;
+}
+.topic .imgTopic img {
+    max-width:100%;
+}
+
+.topicContent{
+    flex:1;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    bordeR:0px solid green;
+    row-gap: 5px;
+    padding-left: 10px;
+}
+.topicContent ul{
+    display: flex;
+    gap:10px;
+}
+
+.topicContent :is(h3,h2,p,ul){
+    margin-bottom: 5px;
+}
+.hero {
+    background-color: red;
+    display: grid;
+    place-items:center;
+    height:200px;
+    text-align: center;
+}
+.hero h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero a{
+    text-align: center;
+    border:2px solid white;
+    border-radius: 5px;
+    display:inline-block;
+    width:200px;
+    padding:5px;
+}
+/*header*/
+header{
+    display:flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    align-items: center;
+}
+header .sort a{
+    margin-inline: 10px;
+}
+header img{
+    width:100px;
+}
+
+.danger{
+    background-color: red;
+}
+.success{
+    background-color: aquamarine;
+}
+
+.primary{
+    color:violet;
+    font-size:2rem;
+    text-transform: capitalize;
+}
+.secondary{
+    text-align: center;
+}
+.text-underline{
+    text-decoration: line-through;
+}
+
+.btnClass{
+    color:red;
+    border:0;
+    outline:2px solid green;
+    outline-offset: 15px;
+    background-color: white;
+    cursor:pointer;
+}
+.blk{
+    display: block;
+    transform: translateX(300px); 
+}
+/* search form */
+.frmSearch{
+padding-block: 10px;
+position: relative;
+}
+form{
+    display: flex;
+}
+form > *{
+    border:0px solid green;
+    display: flex;
+    flex-direction: column;
+}
+form .icons{
+    align-items: center;
+    position: absolute;
+    bordeR:0px solid green;
+    top:50%;
+    left:10px;
+    transform: translateY(-50%);
+}
+.frmSearch .textBox{
+    flex:1;
+    margin-inline: 5px;
+}
+.textBox input[type="text"]{
+    width:100%;
+    padding:5px;
+    padding-left:30px;
+    border:2px solid #eee;
+    border-radius: 2px;
+    outline: none;
+}
+.btn button{
+    background-color:red;
+    color:white;
+    outline: none;
+    border:0px;
+    padding:5px;
+    cursor:pointer
+}
+
+/*footer*/
+footer{
+    background-color: red;
+    text-align: center;
+    position: relative;
+    padding:40px 0px;
+    color:white;
+}
+.newJob{
+    position: absolute;
+    right:20px;
+    top:20px;
+    padding:10px;
+    background-color: black;
+    color:white
+}
+
+/*create new listings*/
+.addJob{
+    display: grid;
+    place-content: center
+}
+.addJob :is(form,form >*){
+    display: block;
+}
+.addJob h1{
+    text-transform: uppercase;
+}
+.addJob form{
+    border:0px solid green;
+   background-color: #eee;
+   padding:10px;
+   
+}
+.inputs label{
+    display: block;
+    font-weight: bold;
+    margin-block: 3px;
+    text-transform: capitalize;
+}
+.inputs input[type=text],input[type=password], textarea{
+    width:100%;
+    border:0;
+    padding:5px;
+    outline: none;
+}
+
+.inputs button{
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    padding:5px;
+}
+/*flash*/
+.flash{
+    position: fixed;
+    inset:0 300px auto;
+    padding:5px;
+    text-align: center;
+    background-color: red;
+    color:white;
+}
+
+/*one topic view (show)*/
+.oneTopic{
+    text-align: center;
+}
+.oneTopic > p{
+    text-transform: capitalize;
+}
+.onetopicImag{
+    width:150px;
+    margin:0px auto;
+}
+
+.btnShowView{
+    width:100%;
+    border-radius: 5px;
+    background-color: var(--bg);
+    margin-block: 10px;
+    padding-block: 10px;
+    color:white;
+    display: block;
+}
+a:has(i) i{
+    margin-inline:10px
+}
+
+/*add new user createe.blade.php under users*/
+.createUser{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:1px solid green;
+    padding:50px;
+    background-color:rgb(249,250,251);
+    display: flex;
+    flex-direction:column ;
+}
+.createUser h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.createUser form{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+
+
